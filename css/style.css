@@ -23,7 +23,6 @@
 
 a{
     display: inline-block;
-    width: 110px;
     font-size: 10px;
     color: #b7cdda;
 }
@@ -43,19 +42,25 @@ p{
 
 /* BUTTON */
 
-.main-header .container{
-    height: 300px;
-}
-
 .btn{
     background-color: #7eb803;
     padding: 5px 20px 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-normal{
+    background-color: #7eb803;
+    padding: 10px;
     border-radius: 5px;
 }
 /* HEADER */
 
 .main-header{
     border-bottom: 0.5px solid #F1ECE9;
+}
+
+.main-header .container{
+    height: 300px;
 }
 
 .main-header .content-left{
@@ -102,14 +107,15 @@ p{
 }
 
 .container-content-right > a{
+    width: 110px;
     text-decoration: none;
 }
 
 /* MAIN */
 
+/* SECTION INTERAZIONE */
 
-
-.container section.interazione{
+section.interazione > .container{
     position: relative;
     height: 400px;
     margin: auto;
@@ -126,4 +132,173 @@ p{
 
 div.content-interazioni h4 span{
     color: #7eb803;
+}
+
+/* SECTION INFO */
+
+section.info{
+    background-color: #0c3259;
+}
+
+section.info > .container{
+    height: 300px;
+    position: relative;
+}
+
+section.info .info-azienda{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20%;
+    transform: translateY(-50%);
+}
+
+.info-azienda > h4,
+.info-azienda >a{
+    color: white;
+    text-decoration: none;
+}
+
+.info-azienda > p{
+    padding: 30px 0;
+}
+
+/* SECTION PROGRAM */
+
+section.program .container{
+    position: relative;
+    width: 60%;
+    margin: auto;
+    height: 450px;
+}
+
+section.program .position{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+section.program .col-left,
+section.program .col-center,
+section.program .col-right{
+    width: 25%;
+    margin: 20px;
+}
+
+section.program img{
+    width: 30px;
+    height: 30px;
+}
+
+section.program .position h4{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+section.program .col-left p{
+    padding: 25px 0;
+    border-bottom: 5px solid #9ac7ef;
+}
+
+section.program .col-center p{
+    padding: 25px 0;
+    border-bottom: 5px solid orange;
+}
+
+section.program .col-right p{
+    padding: 25px 0;
+    border-bottom: 5px solid #82b310;
+}
+
+section.program .col-center a{
+    color: orange;
+}
+
+section.program .col-right a{
+    color: #82b310;
+}
+
+/* SECTION FAQ */
+
+section.faq{
+    background-color: #0c3259;
+}
+
+section.faq .container{
+    width: 60%;
+    position: relative;
+    height: 70px;
+}
+
+section.faq .position{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+section.faq .position p{
+    color: #677c8f;
+}
+
+section.faq .position h4{
+    color: white;
+}
+
+section.faq .position h4 a{
+    color: orange;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer.item{
+    background-color: #17416b;
+    height: 170px;
+}
+
+footer.item .container{
+    width: 60%;
+    position: relative;
+    height: 100%;
+}
+
+footer.item .position{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+footer.item .item-left,
+footer.item .item-right{
+    width: 50%;
+}
+
+footer.item li{
+    list-style: none;
+    padding: 5px 0;
+    font-size: 8px;
+    color: #5b83a9;
+}
+
+footer.item .item-right{
+    text-align: right;
+}
+
+footer.item .item-right h4{
+    padding-bottom: 15px;
+}
+
+footer.item .item-right li{
+    padding: 0;
+}
+
+footer.item h4{
+    color: white;
+    font-size: 12px;
 }
